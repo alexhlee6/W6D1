@@ -45,7 +45,6 @@ class PolyTreeNode
 
     def dfs(target_value)
         return self if self.value == target_value
-        return nil if self.children.empty? 
 
         self.children.each do |child_node| 
             search_result = child_node.dfs(target_value)
